@@ -21,3 +21,6 @@ Through this analysis, I have find out if there is a connection between longer f
 ---
 
 # Hypothesis Testing
+
+***Null Hypothesis:*** There is no relationship between the cooking time and the average rating of recipes\
+***Alternative Hypothesis:*** As the cooking time increases, the average rating of recipes also increases.
