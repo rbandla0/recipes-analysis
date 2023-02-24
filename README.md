@@ -10,6 +10,9 @@ This dataset contains the recipes, recipes's information, and average ratings. U
 ---
 
 # Cleaning and EDA
+```py
+print(recipes.head().to_markdown(index=False))
+```
 
 ---
 
