@@ -26,4 +26,12 @@ Through this analysis, I have find out if there is a connection between longer f
 
 ***Null Hypothesis:*** There is no relationship between the number of steps and the average rating of recipes. The observed difference in the samples is due to random chance.\
 \
-***Alternative Hypothesis:*** There is a relationship between the number of steps and the average rating of recipes. The observed difference in the samples can't be explained by random chance. 
+***Alternative Hypothesis:*** There is a relationship between the number of steps and the average rating of recipes. The observed difference in the samples can't be explained by random chance.\
+\
+***Test Statistic:*** Total Variation Distance (TVD)\
+\
+***Significance Level:*** 0.05\
+\
+***P-value:*** 0.019\
+\
+***Conclusion:*** 
