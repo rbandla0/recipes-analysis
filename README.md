@@ -1,4 +1,4 @@
-# Does Taking Longer To Prepare Food Make It That Much Better??
+# Does Longer Steps To Prepare Food Make It That Much Better??
 by Raghava Bandla (rbandla@ucsd.edu)
 
 ---
