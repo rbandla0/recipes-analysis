@@ -20,6 +20,7 @@ The first thing I did was getting a series containing the average rating of each
 \
 ***Univariate Analysis:*** This box and whiskers plot shows the distribution of the number of steps. 50% of the data is in between the 6-13 range, but the maximum and 4th quartile skew the data towards a higher number of steps.
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
+
 \
 \
 ***Bivariate Analysis:*** This scatter plot shows the number of steps on the x-axis and the average rating on the y-axis. Majority of the data points are clumped in the top left corner however as the number of steps increased, the number of low average ratings decreased. 
