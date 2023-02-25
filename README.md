@@ -16,6 +16,11 @@ Through this analysis, I have to find out if there is a connection between the n
 # Cleaning and EDA
 The first thing I did was getting a series containing the average rating of each recipe id which was also the index of the series. I merged this series with the recipes dataframe using the left merge so that every recipe id in recipes was in the resulting dataframe but the average rating of each recipe id in the series that was also in recipes was included in the dataframe. I named this new column 'avg_rating'. After that, I replaced all the 0 values in the 'minutes' column with np.nan because taking 0 minutes for a recipe doesn't make sense. I also replaced the maximum minutes value of 1051200 with np.nan because it skewed the data too much and the actual recipe wasn't an edible reciple. After this, I got calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates
 `print(recipes.head().to_markdown(index=False))`
+\
+\
+***Univariate Analysis:*** \
+<iframe src="assets/fig2.html" width=800 height=600 frameBorder=0></iframe>
+
 
 ---
 
