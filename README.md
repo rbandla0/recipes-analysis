@@ -19,7 +19,7 @@ The first thing I did was getting a series containing the average rating of each
 \
 \
 ***Univariate Analysis:*** \
-<iframe src="assets/fig2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
 
 
 ---
