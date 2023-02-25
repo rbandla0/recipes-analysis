@@ -14,17 +14,15 @@ Through this analysis, I have to find out if there is a connection between the n
 ---
 
 # Cleaning and EDA
-The first thing I did was getting a series containing the average rating of each recipe id which was also the index of the series. I merged this series with the recipes dataframe using the left merge so that every recipe id in recipes was in the resulting dataframe but the average rating of each recipe id in the series that was also in recipes was included in the dataframe. I named this new column 'avg_rating'. After that, I replaced all the 0 values in the 'minutes' column with np.nan because taking 0 minutes for a recipe doesn't make sense. I also replaced the maximum minutes value of 1051200 with np.nan because it skewed the data too much and the actual recipe wasn't an edible reciple. After this, I got calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates
+The first thing I did was getting a series containing the average rating of each recipe id which was also the index of the series. I merged this series with the recipes dataframe using the left merge so that every recipe id in recipes was in the resulting dataframe but the average rating of each recipe id in the series that was also in recipes was included in the dataframe. I named this new column 'avg_rating'. After that, I replaced all the 0 values in the 'minutes' column with np.nan because taking 0 minutes for a recipe doesn't make sense. I also replaced the maximum minutes value of 1051200 with np.nan because it skewed the data too much and the actual recipe wasn't an edible reciple. After this, I got calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates numbers from the 'nutrition' column and added them to their own columns. 
 `print(recipes.head().to_markdown(index=False))`
 \
 \
-***Univariate Analysis:***
-\
+***Univariate Analysis:*** This box and whiskers plot shows the distribution of the number of steps. 50% of the data is in between the 6-13 range, but the maximum and 4th quartile skew the data towards a higher number of steps.\
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
 \
 \
-***Bivariate Analysis:***
-\
+***Bivariate Analysis:*** This scatter plot shows the number of steps on the x-axis and the average rating on the y-axis. Majority of the data points are clumped in the top left corner however as the number of steps increased, the number of low average ratings decreased. 
 <iframe src="assets/fig3.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
