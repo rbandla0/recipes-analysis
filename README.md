@@ -18,7 +18,7 @@ The first thing I did was getting a series containing the average rating of each
 `print(recipes.head().to_markdown(index=False))`
 \
 \
-***Univariate Analysis:*** This box and whiskers plot shows the distribution of the number of steps. 50% of the data is in between the 6-13 range, but the maximum and 4th quartile skew the data towards a higher number of steps.\
+***Univariate Analysis:*** This box and whiskers plot shows the distribution of the number of steps. 50% of the data is in between the 6-13 range, but the maximum and 4th quartile skew the data towards a higher number of steps.
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
 \
 \
@@ -28,7 +28,10 @@ The first thing I did was getting a series containing the average rating of each
 ---
 
 # Assessment of Missingness
-***NMAR Analysis:*** In this dataset, there is not a column where
+***NMAR Analysis:*** In this dataset, there is a column that is NMAR which is the 'description' column because the missingness depends on the actual values. If the recipe is self explanatory, then there would be no reason for a description or if the description basically contains the name of the recipe. 
+
+***Missingness Dependency:*** The 'n_steps' column is a column that 'avg_rating' depends on because the p-value was 0.0 and the significance level was 0.05. This means we reject the null that the missingness of 'avg_rating' doesn't depends on 'n_steps'. This could be evidence for the question I am trying to answer because the missingness of average rating is dependent on the number of steps. The 'name' column is a column that 'avg_rating' doesn't depend on because the p-value was 0.126 and the significance level was 0.05. This means we fail to reject the null that the missingness of 'avg_rating' does depend on 'n_steps'.
+<iframe src="assets/fig5.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
@@ -44,4 +47,4 @@ The first thing I did was getting a series containing the average rating of each
 \
 ***P-value:*** 0.019\
 \
-***Conclusion:*** 
+***Conclusion:*** Since the p-value is less than the significane level, we reject the null because there isn't enough statistical evidence to support it. SInce we reject the null, it proves that there is a relationship between the number of steps and the average rating of recipes. These choices are good for answering the question because if we reject the null based on the permutation test performed, then it answers the question. 
