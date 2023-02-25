@@ -20,7 +20,10 @@ The first thing I did was getting a series containing the average rating of each
 \
 ***Univariate Analysis:*** \
 <iframe src="assets/fig1.html" width=800 height=600 frameBorder=0></iframe>
-
+\
+\
+***Bivariate Analysis:*** \
+<iframe src="assets/fig3.html" width=800 height=600 frameBorder=0></iframe>
 
 ---
 
