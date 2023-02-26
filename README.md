@@ -145,6 +145,6 @@ print(recipes.head().to_markdown(index=False))
 \
 ***Significance Level:*** 0.05\
 \
-***P-value:*** 0.019\
+***P-value:*** 0.022\
 \
 ***Conclusion:*** Since the p-value is less than the significane level, we reject the null because there isn't enough statistical evidence to support it. SInce we reject the null, it proves that there is a relationship between the number of steps and the average rating of recipes. These choices are good for answering the question because if we reject the null based on the permutation test performed, then it answers the question. 
